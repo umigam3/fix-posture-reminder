@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentInterval = 300000; // Default 5 minutes
 
     function remindPosture() {
-        //alarm.play();
+        alarm.play();
     }
 
     function setReminderInterval(interval, displayText) {
