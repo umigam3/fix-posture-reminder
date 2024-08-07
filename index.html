@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix Posture Reminder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+</head>
+<body>    
+    <main>
+        <nav>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="github-icon icon icon-tabler icons-tabler-outline icon-tabler-brand-github"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg>
+            </a>
+        </nav>
+        
+        <section>
+            <h1>Fix your <span class="highlight">posture</span>!</h1>
+            <p class="h2">A small application to remind you to fix your posture. Follow the steps and fix your posture!</p>
+
+            <audio id="alarm" src="/assets/audio/fixposture.mp3" preload="auto"></audio>
+
+            <div class="step">
+                <div class="step-num">1</div>
+                <p class="step-description">Pin your browser tab to ensure that it doesn't close accidentally.</p>
+                <img class="step-image" src="assets/img/step1.png" width="400">    
+            </div>
+
+            <div class="step">
+                <div class="step-num">2</div>
+                <p class="step-description">Choose when you want to receive an audio reminder to fix your posture.</p>
+                
+                <div id="controls">
+                    <button id="5min">Every 5 minutes</button>
+                    <button id="15min">Every 15 minutes</button>
+                    <button id="30min">Every 30 minutes</button>
+                </div>    
+            </div>
+
+            <div class="step">
+                <div class="step-num">3</div>
+                <p class="step-description">Enjoy!</p>
+                <div class="step-description" id="current-time">Current reminder time: <span id="time-display">5 minutes</span></div>        
+            </div>
+    
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
